@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import ColumnOrder from './components/ColumnOrder'
 
 function App() {
+  // const vehicledData = fetch('./data/vehicle_mock_data.json', {
+  //   headers: {
+  //     'Content-Type': 'application/json',
+  //     Accept: 'application/json'
+  //   }
+  // })
+  //   .then((response) => response.json())
+  //   .then((data) => console.log(data))
+
+  // console.log('I am vehicle', vehicledData)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>React table</h2>
+      {/* <BasicTable /> */}
+      {/* <SortingTable /> */}
+      {/* <FilteringTable /> */}
+      {/* <PaginationTable /> */}
+      {/* <RowSelection /> */}
+      <ColumnOrder />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
